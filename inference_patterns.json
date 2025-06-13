@@ -1,0 +1,6 @@
+{
+    "default": [["r_associated","r_associated"]],
+    "R": [["r_isa","R"],["r_syn","R"]],
+    "r_isa": [["r_isa", "r_isa"], ["r_syn", "r_isa"]],
+    "r_hypo": [["r_hypo", "r_hypo"]]
+}
