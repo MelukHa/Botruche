@@ -67,6 +67,10 @@ async def on_ready():
     dossier_cache = 'cache/'
     nb_sec_semaine = 7 * 24 * 60 * 60 * 4 # 1 mois en secondes
     removed = 0
+    erreurs_ouvertures = 0  # Il faut aussi initialiser cette variable
+
+    # S'assurer que le dossier cache existe
+    os.makedirs(dossier_cache, exist_ok=True)
 
     # Parcourir tous les fichiers du dossier cache
     for nom_fichier in os.listdir(dossier_cache):
